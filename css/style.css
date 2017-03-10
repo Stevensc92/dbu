@@ -1,0 +1,2556 @@
+/* -----------------------------------------------------------------------------
+    R E S E T
+----------------------------------------------------------------------------- */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+	width: 100%;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+/* -----------------------------------------------------------------------------
+    G E N E R A L
+----------------------------------------------------------------------------- */
+@font-face {
+	font-family: 'icomoon';
+	src:url('fonts/icomoon.eot?wk9mdb');
+	src:url('fonts/icomoon.eot?#iefixwk9mdb') format('embedded-opentype'),
+		url('fonts/icomoon.woff?wk9mdb') format('woff'),
+		url('fonts/icomoon.ttf?wk9mdb') format('truetype'),
+		url('fonts/icomoon.svg?wk9mdb#icomoon') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+	font-family: 'icomoon';
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+
+	/* Better Font Rendering =========== */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.icon-remove:before {
+	content: "\e600";
+}
+
+body
+{
+	background: url("../images/background.png");
+	min-width: 565px;
+	max-width: 100%;
+	height: 10px;
+	overflow: auto;
+}
+
+#error-404 h1
+{
+	font-size: 42px;
+	text-align: center;
+	font-style: italic;
+	font-weight: bold;
+}
+
+#error-404 p
+{
+	font-size: 30px;
+	text-align: center;
+}
+
+
+
+button
+{
+	color: white;
+	background: linear-gradient(#64819f, #94afcb);
+	border: 1px solid white;
+	border-radius: 8px;
+	text-shadow: 1px 2px 3px black;
+	box-shadow: 1px 1px 8px #64819f;
+	margin-top: 20px;
+}
+
+button:hover
+{
+	color: black;
+}
+
+input, select, .button
+{
+	color: white;
+	background: linear-gradient(#64819f, #94afcb);
+	border: 1px solid white;
+	border-radius: 8px;
+	text-shadow: 1px 2px 3px black;
+	box-shadow: 1px 1px 8px #64819f;
+}
+
+input:hover, select:hover, .button:hover
+{
+	color: black;
+}
+
+a.button
+{
+	font-style: normal;
+	text-decoration: none;
+	padding: 3px;
+}
+
+.joueur-online-off
+{
+	color: white;
+	position: absolute;
+	right: 50%;
+	top: 15px;
+}
+
+.joueur-online-on { color: white; }
+
+/* -----------------------------------------------------------------------------
+    Z C O D E  &  A U T R E S
+----------------------------------------------------------------------------- */
+
+.strong { font-weight: bold; }
+
+.webmaster { color: white; font-weight: bold; }
+.administrateur { color : red; font-weight: bold; }
+.moderateur { color: blue; font-weight: bold; }
+.animateur { color: orange; font-weight: bold; }
+.gras { font-weight: bold; }
+.no-lien:link { text-decoration: none; border: none; }
+.italique { font-style: italic; }
+
+/* -----------------------------------------------------------------------------
+    I N S C R I P T I O N
+----------------------------------------------------------------------------- */
+
+#inscription
+{
+	background: url("../images/register/background_full.png");
+	width: 886px;
+	height: 393px;
+}
+
+.text-inscription
+{
+	width: 340px;
+	position: relative;
+	top: 70px;
+	left: 450px;
+}
+
+.text-inscription label
+{
+	display: block;
+	float: left;
+	width: 175px;
+}
+
+.text-inscription label, .text-inscription input
+{
+	margin-top: 5px;
+}
+
+.text-inscription input[type=submit]
+{
+	float: right;
+	margin-right: 45px;
+}
+
+span.error { color: red; }
+span.success { color: green; }
+
+span.error, span.success
+{
+	display: block;
+	margin-top: 40px;
+	width: auto;
+}
+
+
+/* -----------------------------------------------------------------------------
+    T O P
+----------------------------------------------------------------------------- */
+
+header
+{
+	height: 51px;
+	width: 100%;
+	background: url("../images/top/background_top.png");
+	position: fixed;
+	z-index: 3;
+}
+
+#logo
+{
+	background: url("../images/logo_petit.png");
+	width: 144px;
+	height: 56px;
+	float: left;
+}
+
+.stop_float
+{
+	clear: both;
+}
+
+/* -----------------------------------------------------------------------------
+    T O P  -  O F F L I N E
+----------------------------------------------------------------------------- */
+
+#form-connexion
+{
+	float: right;
+	margin-top: 3px;
+	margin-right: 5px;
+}
+
+#form-connexion input[type=submit]
+{
+	background: url("../images/connexion.png");
+	width: 118px;
+	height: 45px;
+	border: none;
+}
+
+/* -----------------------------------------------------------------------------
+    T O P  -  O N L I N E
+----------------------------------------------------------------------------- */
+
+#menu-top li, .deconnexion
+{
+	display: inline-block;
+}
+
+#menu-top a
+{
+	display: inline-block;
+	margin-top: 8px;
+	margin-left: 13%;
+}
+
+.lien-perso
+{
+	background: url("../images/top/personnage.png");
+	width: 150px;
+	height: 35px;
+}
+
+.lien-combat
+{
+	background: url("../images/top/combat.png");
+	width: 117px;
+	height: 35px;
+}
+
+.lien-carte
+{
+	background: url("../images/top/carte.png");
+	width: 80px;
+	height: 35px;
+}
+
+.lien-top
+{
+	background: url("../images/top/top.png");
+	width: 59px;
+	height: 34px;
+}
+
+.deconnexion
+{
+	background: url("../images/top/deconnexion.png");
+	width: 45px;
+	height: 45px;
+	position: absolute;
+	top: 3px;
+	right: 3px;
+}
+
+/* -----------------------------------------------------------------------------
+    N A V I G A T I O N
+----------------------------------------------------------------------------- */
+
+nav
+{
+	margin-top: 5px;
+	background: url("../images/nav/background_2.png");
+	width: 187px;
+	height: 652px;
+	position: fixed;
+	top: 45px;
+	left: -1px;
+}
+
+nav .nav-aventure
+{
+	background: url("../images/nav/aventure.png");
+	width: 198px;
+	height: 46px;
+	position: relative;
+	top: 0px;
+}
+
+nav ul
+{
+	position: relative;
+	top: 15px;
+}
+
+.lien-nav
+{
+	margin-top: 5px;
+	margin-left: 5px;
+}
+
+.nav-accueil
+{
+	background: url("../images/nav/accueil.png");
+	width: 207px;
+	height: 62px;
+	margin-top: 20px;
+}
+
+.nav-accueil:hover
+{
+	background: url("../images/nav/accueil_hover.png");
+	width: 207px;
+	height: 62px;
+}
+
+.nav-personnage
+{
+	background: url("../images/nav/personnage.png");
+	width: 207px;
+	height: 62px;
+}
+
+.nav-personnage:hover
+{
+	background: url("../images/nav/personnage_hover.png");
+	width: 207px;
+	height: 62px;
+}
+
+.nav-capsule
+{
+	background: url("../images/nav/capsule.png");
+	width: 207px;
+	height: 62px;
+}
+
+.nav-capsule:hover
+{
+	background: url("../images/nav/capsule_hover.png");
+	width: 207px;
+	height: 62px;
+}
+
+.nav-message
+{
+	background: url("../images/nav/message.png");
+	width: 207px;
+	height: 62px;
+}
+
+.nav-message:hover
+{
+	background: url("../images/nav/message_hover.png");
+	width: 207px;
+	height: 62px;
+}
+
+.nav-message-new
+{
+	background: url("../images/nav/message_new.png");
+	width: 207px;
+	height: 62px;
+}
+
+.nav-message-new:hover
+{
+	background: url("../images/nav/message_new_hover.png");
+	width: 207px;
+	height: 62px;
+}
+
+.nav-option
+{
+	background: url("../images/nav/option.png");
+	width: 207px;
+	height: 62px;
+}
+
+.nav-option:hover
+{
+	background: url("../images/nav/option_hover.png");
+	width: 207px;
+	height: 62px;
+}
+
+.nav-forum
+{
+	background: url("../images/nav/forum.png");
+	width: 207px;
+	height: 62px;
+}
+
+.nav-forum:hover
+{
+	background: url("../images/nav/forum_hover.png");
+	width: 207px;
+	height: 62px;
+}
+
+.nav-team
+{
+	background: url("../images/nav/team.png");
+	width: 207px;
+	height: 62px;
+}
+
+.nav-team:hover
+{
+	background: url("../images/nav/team_hover.png");
+	width: 207px;
+	height: 62px;
+}
+
+
+/* -----------------------------------------------------------------------------
+    P E R S O  E N  C O U R S
+----------------------------------------------------------------------------- */
+
+#perso_en_cours
+{
+	background: url("../images/perso_en_cours/background.png");
+	width: 190px;
+	height: 466px;
+	float: right;
+	position: fixed;
+	top: 60px;
+	right: 25px;
+	text-align: center;
+}
+
+#perso_en_cours .avatar
+{
+	position: relative;
+	left: 28px;
+	top: 26px;
+	width: 133px;
+	height: 179px;
+}
+
+#perso_en_cours .avatar img { border-top-left-radius:8px; border-top-right-radius: 8px; }
+
+#perso_en_cours .nom_personnage
+{
+	display: block;
+	position: relative;
+	top: 29px;
+	color: #56595B;
+	font-weight: bold;
+	text-shadow: 1px 1px 2px gray;
+}
+
+.infos_personnage ul
+{
+	position: relative;
+	left: 5px;
+	top: 33px;
+}
+
+.infos_personnage .value { font-weight: bold; }
+
+
+.infos_personnage hr
+{
+	width: 180px;
+	margin-right: 8px;
+	color: orange;
+}
+
+li.level { margin-top: 2px; }
+
+li.barre { margin-top: 5px;	margin-left: 20px; }
+
+#perso_en_cours .barre-experience, #perso_en_cours .progression
+{
+	display: block;
+	height: 10px;
+	width: 140px;
+
+	-moz-border-radius: 15px;
+	-webkit-border-radius: 15px;
+	-o-border-radius: 15px;
+	border-radius: 15px;
+}
+
+#perso_en_cours .barre-experience
+{
+	background-color: white;
+	margin: 0 0 5px;
+	border: 1px solid #A7580C;
+
+	-moz-box-shadow: 1px 1px 4px #A7580C;
+	-webkit-box-shadow: 1px 1px 4px #A7580C;
+	-o-box-shadow: 1px 1px 4px #A7580C;
+	box-shadow: 1px 1px 4px #A7580C;
+}
+
+#perso_en_cours .progression
+{
+	background-color: #EFA544;
+	border-right: 1px solid orange;
+}
+
+#perso_en_cours .percent
+{
+	color: black;
+	display: block;
+	text-align: center;
+	font-size: 10px;
+}
+
+
+/* -----------------------------------------------------------------------------
+    C O N T E N U
+----------------------------------------------------------------------------- */
+
+#content
+{
+	width: 60%;
+	margin: auto;
+	padding-top: 50px;
+	text-align: justify;
+	position: relative;
+	top: 20px;
+	z-index: 2;
+}
+
+#other-content { margin-left: 5%; }
+
+.decal
+{
+	padding-left: 5%;
+}
+
+/* -----------------------------------------------------------------------------
+    N E W S
+----------------------------------------------------------------------------- */
+
+.news
+{
+	width: 100%;
+	border: 1px solid black;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+	margin-bottom: 20px;
+	padding-bottom: 5px;
+	margin-left: 50px;
+}
+
+.news-titre
+{
+	width: 100%;
+	border-bottom: 1px solid black;
+	display: block;
+	background: url("../images/table/gradhead.png");
+	text-align: center;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+	color: #4F7397;
+	font-weight: bold;
+}
+
+.news-content {	margin: 5px; }
+
+/* -----------------------------------------------------------------------------
+    I N F O  P E R S O N N A G E
+----------------------------------------------------------------------------- */
+
+#info_personnage
+{
+	background: url("../images/info_perso/background.png");
+	width: 840px;
+	height: 510px;
+}
+
+#caracteristique
+{
+	position: relative;
+	top: 175px;
+	left: 50px;
+	width: 329px;
+	height: 150px;
+}
+
+#caracteristique .carac_title, #caracteristique .carac_chiffre { display: inline-block; }
+#caracteristique .carac_title { text-align: left; font-style: italic; }
+#caracteristique .carac_chiffre { float: right; font-weight: bold; }
+
+
+#avatar
+{
+	position: relative;
+	width: 178px;
+	height: 268px;
+	left: 399px;
+	bottom: 100px;
+}
+
+#statistique
+{
+	width: 221px;
+	height: 315px;
+	position: relative;
+	left: 610px;
+	bottom: 380px;
+}
+
+
+#statistique .nom_personnage
+{
+	font-size: 24px;
+	text-align: center;
+	margin-bottom: 10px;
+	font-style: italic;
+	font-weight: bold;
+	font-family: "Comic Sans MS", sans-serif;
+	text-shadow: 1px 3px 10px white;
+}
+
+#statistique .info_title
+{
+	font-size: 20px;
+	text-align: center;
+	margin-bottom: 10px;
+	text-decoration: underline;
+}
+
+#statistique .carac_title, #statistique .carac_chiffre { display: inline-block; }
+#statistique .carac_title { text-align: left; font-style: italic; }
+#statistique .carac_chiffre { float: right; font-weight: bold; }
+
+
+#pts_distrib #tableau {
+    font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif;
+    font-size: 12px;
+    margin: 10px 0;
+    width: 100%;
+    text-align: left;
+    border-collapse: collapse;
+	margin-bottom: 50px;
+}
+#pts_distrib #tableau th {
+    font-size: 13px;
+    font-weight: normal;
+    padding: 8px;
+    background: #b9c9fe url('http://4.bp.blogspot.com/_xDpoN6UfFFY/S-J2gjh1nPI/AAAAAAAACbg/7lNsVpks2oY/s1600/gradhead.png') repeat-x;
+    border-top: 2px solid #d3ddff;
+    border-bottom: 1px solid #fff;
+    color: #039;
+}
+#pts_distrib #tableau tr.liste_perso td {
+    padding: 8px;
+    border-bottom: 1px solid #fff;
+    color: #669;
+    border-top: 1px solid #fff;
+    background: #e8edff url('http://1.bp.blogspot.com/_xDpoN6UfFFY/S-J2f5yBC3I/AAAAAAAACbY/zWXYXsR-w5E/s1600/gradback.png') repeat-x;
+}
+#pts_distrib #tableau tfoot tr td{
+    background: #e8edff;
+    font-size: 16px;
+    color: #99c;
+    text-align:center;
+}
+
+#pts_distrib #tableau tr.notable
+{
+	text-align: center;
+}
+#pts_distrib #tableau tbody tr.liste_perso:hover td {
+    background: #d0dafd url('http://4.bp.blogspot.com/_xDpoN6UfFFY/S-J2hsztUzI/AAAAAAAACbo/ztV1CK0RUrE/s1600/gradhover.png') repeat-x;
+    color: #339;
+}
+#pts_distrib #tableau a:hover {
+    text-decoration:underline;
+}
+
+.pts_distrib a
+{
+	color: white;
+	display: block;
+	margin-top: 30px;
+	text-decoration: none;
+	font-style: italic;
+	font-size: 18px;
+}
+
+h1.pts_distrib
+{
+	width: 30%;
+	color: white;
+	margin: auto;
+}
+
+#pts_distrib
+{
+	width: 30%;
+	margin: auto;
+}
+
+form#pts_distrib label, form#pts_distrib input[type=text]
+{
+	display: inline-block;
+}
+
+#pts_distrib label
+{
+	width: 150px;
+}
+
+#info_personnage #experience
+{
+	width: 550px;
+	position: relative;
+	bottom: 345px;
+	left: 20px;
+}
+
+#experience .experience_chiffre
+{
+	display: block;
+	text-align: center;
+	font-size: 20px;
+	margin-bottom: 20px;
+}
+
+#experience .experience_chiffre .exp { font-weight: bold; }
+#experience .experience_chiffre .title { font-style: italic; }
+
+
+#experience .bar_perso, #experience .progression
+{
+	display: block;
+	height: 30px;
+	width: 500px;
+
+	-moz-border-radius: 15px;
+	-webkit-border-radius: 15px;
+	-o-border-radius: 15px;
+	border-radius: 15px;
+	margin-left: 50px;
+}
+
+
+#experience .bar_perso
+{
+	background-color: white;
+	margin: 0 0 5px;
+
+	-moz-box-shadow: 1px 1px 4px #999;
+	-webkit-box-shadow: 1px 1px 4px #999;
+	-o-box-shadow: 1px 1px 4px #999;
+	box-shadow: 1px 1px 4px #999;
+}
+
+#experience .percent
+{
+	color: black;
+	display: block;
+	text-align: center;
+	font-size: 24px;
+}
+
+#experience .progression
+{
+	background-color: rgb(253,205,73);
+	margin: 0 0 5px;
+	-moz-box-shadow: 1px 1px 4px #999;
+	-webkit-box-shadow: 1px 1px 4px #999;
+	-o-box-shadow: 1px 1px 4px #999;
+	box-shadow: 1px 1px 4px #999;
+}
+
+
+/* -----------------------------------------------------------------------------
+    I N F O S  P E R S O N N A G E   T O T A L
+----------------------------------------------------------------------------- */
+
+.bloc_perso, #cumul { display: inline-block; margin-bottom: 4px; margin-left: 5px; vertical-align: top; }
+
+.bloc_perso
+{
+	width: 350px;
+	height: 160px;
+	border: 2px groove black;
+	border-radius: 20px;
+	background-color: #dfe2ff;
+}
+
+.bloc_perso h1 { text-align: center; margin-top: 2px; text-shadow: 1px 2px 3px black; }
+.bloc_perso img { float: right; margin-right: 10px; border: 1px solid #58778a; }
+.bloc_perso .carac_title { text-align: left; font-style: italic; margin-left: 5px; }
+.bloc_perso .carac_chiffre { font-weight: bold; float: right; margin-right: 5px;}
+.bloc_perso li { margin-top: 6px; }
+.bloc_perso li.barre { margin-left: 30%; }
+
+.bloc_perso .bar-experience, .bloc_perso .bar-progression
+{
+	display: block;
+	height: 10px;
+	width: 140px;
+
+	-moz-border-radius: 15px;
+	-webkit-border-radius: 15px;
+	-o-border-radius: 15px;
+	border-radius: 15px;
+	margin-left: 50px;
+}
+
+
+.bloc_perso .bar-experience
+{
+	background-color: white;
+	margin: 0 0 5px;
+	border: 1px solid #A7580C;
+
+	-moz-box-shadow: 1px 1px 4px #999;
+	-webkit-box-shadow: 1px 1px 4px #999;
+	-o-box-shadow: 1px 1px 4px #999;
+	box-shadow: 1px 1px 4px #999;
+}
+
+.bloc_perso .bar-progression
+{
+	background-color: rgb(253,205,73);
+	margin: 0 0 5px;
+	-moz-box-shadow: 1px 1px 4px #999;
+	-webkit-box-shadow: 1px 1px 4px #999;
+	-o-box-shadow: 1px 1px 4px #999;
+	box-shadow: 1px 1px 4px #999;
+}
+
+#cumul
+{
+	width: 350px;
+	height: 160px;
+	border: 2px groove black;
+	background-color: #dfe2ff;
+	border-radius: 20px;
+}
+
+#cumul h1 { text-align: center; }
+#cumul .cumul_title { text-align: left;	font-style: italic; }
+#cumul .cumul_chiffre { font-weight: bold; float: right; }
+#cumul li { margin-top: 7px; padding-left: 10px; padding-right: 10px; }
+
+/* -----------------------------------------------------------------------------
+    C A P S U L E  -  E Q U I P E E  &  I N V E N T A I R E
+----------------------------------------------------------------------------- */
+
+#caps_equiper
+{
+	width: 724px;
+	height: 272px;
+	background: url("../images/capsule/equiper_background.png");
+}
+
+#caps_equiper .content
+{
+	position: relative;
+	top: 60px;
+	left: 55px;
+	width: 650px;
+	height: 190px;
+	overflow: auto;
+	text-align: justify;
+}
+
+#caps_equiper .content li
+{
+	display: inline-block;
+	margin-top: 5px;
+	margin-right: 5px;
+	width: 120px;
+	vertical-align: top;
+}
+
+#caps_equiper input[type=submit]
+{
+	color: white;
+	background: linear-gradient(#64819f, #94afcb);
+	border: 1px solid white;
+	border-radius: 8px;
+	text-shadow: 1px 2px 3px black;
+	box-shadow: 1px 1px 8px #64819f;
+}
+
+#caps_equiper .infos_caps
+{
+	text-align: center;
+}
+
+#inventaire
+{
+	width: 724px;
+	height: 272px;
+	background: url("../images/capsule/inventaire_background.png");
+}
+
+#inventaire .content 
+{
+	position: relative;
+	top: 57px;
+	left: 55px;
+	width: 650px;
+	height: 190px;
+	overflow: auto;
+	text-align: justify;
+}
+
+#inventaire .content li
+{
+	display: inline-block;
+	margin-top: 5px;
+	margin-right: 5px;
+	width: 120px;
+	vertical-align: top;
+}
+
+#inventaire input[type=submit]
+{
+	color: white;
+	background: linear-gradient(#64819f, #94afcb);
+	border: 1px solid white;
+	border-radius: 8px;
+	text-shadow: 1px 2px 3px black;
+	box-shadow: 1px 1px 8px #64819f;
+}
+
+#inventaire .submit-button, #caps_equiper .submit-button
+{
+	float: right;
+	position: relative;
+	top: 30px;
+	right: 10px;
+}
+
+#inventaire .infos_caps
+{
+	text-align: center;
+}
+
+/* H O V E R   C A P S U L E */
+
+#caps_equiper .left, #inventaire .left
+{
+	text-align: left;
+	color: black;
+}
+
+/*.infoStatCaps
+{
+	display: none;
+	background: url("../images/capsule/background.png");
+	width: 276px;
+	height: 174px;
+	position: relative;
+	top: -80px;
+}*/
+
+/* -----------------------------------------------------------------------------
+    N O T I F I C A T I O N S
+----------------------------------------------------------------------------- */
+
+#alert
+{
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	z-index: 9999999999;
+}
+
+.alert {
+  padding: 8px 35px 8px 14px;
+  margin-bottom: 18px;
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
+  background-color: #fcf8e3;
+  border: 1px solid #fbeed5;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+	text-align: center;
+}
+.alert, .alert-heading {
+  color: #c09853;
+}
+.alert .close {
+  position: relative;
+  top: -2px;
+  right: -21px;
+  line-height: 18px;
+}
+.alert-success {
+  background-color: #dff0d8;
+  border-color: #d6e9c6;
+}
+.alert-success, .alert-success .alert-heading {
+  color: #468847;
+}
+.alert-danger, .alert-error {
+  background-color: #f2dede;
+  border-color: #eed3d7;
+}
+.alert-danger,
+.alert-error,
+.alert-danger .alert-heading,
+.alert-error .alert-heading {
+  color: #b94a48;
+}
+.alert-info {
+  background-color: #d9edf7;
+  border-color: #bce8f1;
+}
+.alert-info, .alert-info .alert-heading {
+  color: #3a87ad;
+}
+.alert-block {
+  padding-top: 14px;
+  padding-bottom: 14px;
+}
+.alert-block > p, .alert-block > ul {
+  margin-bottom: 0;
+}
+.alert-block p + p {
+  margin-top: 5px;
+}
+
+.close {
+  float: right;
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 18px;
+  color: #000000;
+  text-shadow: 0 1px 0 #ffffff;
+  opacity: 0.2;
+  filter: alpha(opacity=20);
+}
+.close:hover {
+  color: #000000;
+  text-decoration: none;
+  opacity: 0.4;
+  filter: alpha(opacity=40);
+  cursor: pointer;
+}
+
+/* -----------------------------------------------------------------------------
+    N O T I F I C A T I O N S  -  M O D A L
+----------------------------------------------------------------------------- */
+
+#modal
+{
+	position: fixed;
+	top: 250;
+	left: 0;
+	right: 0;
+	z-index: 9999999999;
+}
+
+.modal {
+  padding: 8px 35px 8px 14px;
+  margin-bottom: 18px;
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
+  background-color: #fcf8e3;
+  border: 1px solid #fbeed5;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+	text-align: center;
+}
+.modal, .modal-heading {
+  color: #c09853;
+}
+.modal .close {
+  position: relative;
+  top: -2px;
+  right: -21px;
+  line-height: 18px;
+}
+.modal-success {
+  background-color: #dff0d8;
+  border-color: #d6e9c6;
+}
+.modal-success, .modal-success .modal-heading {
+  color: #468847;
+}
+.modal-danger, .modal-error {
+  background-color: #f2dede;
+  border-color: #eed3d7;
+}
+.modal-danger,
+.modal-error,
+.modal-danger .modal-heading,
+.modal-error .modal-heading {
+  color: #b94a48;
+}
+.modal-info {
+  background-color: #d9edf7;
+  border-color: #bce8f1;
+}
+.modal-info, .modal-info .modal-heading {
+  color: #3a87ad;
+}
+.modal-block {
+  padding-top: 14px;
+  padding-bottom: 14px;
+}
+.modal-block > p, .modal-block > ul {
+  margin-bottom: 0;
+}
+.modal-block p + p {
+  margin-top: 5px;
+}
+
+.close {
+  float: right;
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 18px;
+  color: #000000;
+  text-shadow: 0 1px 0 #ffffff;
+  opacity: 0.2;
+  filter: alpha(opacity=20);
+}
+.close:hover {
+  color: #000000;
+  text-decoration: none;
+  opacity: 0.4;
+  filter: alpha(opacity=40);
+  cursor: pointer;
+}
+
+/* -----------------------------------------------------------------------------
+    F I G H T  -  L I S T I N G
+----------------------------------------------------------------------------- */
+
+h1.title-tableau
+{
+	margin: auto;
+	text-align: center;
+	font-weight: bold;
+	color: #4987FF;
+	text-shadow: 1px 2px 3px white;
+}
+
+h1.title-tableau span.title-info
+{
+	font-style: italic;
+}
+
+.tableau
+{
+	font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif;
+	font-size: 12px;
+	margin: 10px 0;
+	width: 100%;
+	text-align: left;
+	border-collapse: collapse;
+}
+
+.tableau th.liste_perso
+{
+	font-size: 13px;
+	font-weight: normal;
+	padding: 8px;
+	background: #b9c9fe url("../images/table/gradhead.png") repeat-x;
+	border-top: 2px solid #d3ddff;
+	border-bottom: 1px solid #fff;
+	color: #039;
+	font-weight: bold;
+	font-style: italic;
+}
+
+.tableau tr td.liste_perso
+{
+	padding: 8px;
+	border-bottom: 1px solid #fff;
+	color: #669;
+	border-top: 1px solid #fff;
+	background: #e8edff url("../images/table/gradback.png") repeat-x;
+}
+
+.tableau tr.liste_perso:hover td
+{
+	background: #d0dafd url('../images/table/gradhover.png') repeat-x;
+	color: #339;
+}
+
+.tableau .submit
+{
+	text-align: center;
+	margin: auto;
+}
+
+.tableau .submit input[type=submit]
+{
+	color: white;
+	background: linear-gradient(#64819f, #94afcb);
+	border: 1px solid white;
+	border-radius: 8px;
+	text-shadow: 1px 2px 3px black;
+	box-shadow: 1px 1px 8px #64819f;
+}
+
+.tableau .td-mult
+{
+	text-align: center;
+	color: grey;
+}
+
+/* -----------------------------------------------------------------------------
+    F I G H T  -  S E L E C T I O N   R O U N D S
+----------------------------------------------------------------------------- */
+
+.title-sendfight
+{
+	font-size: 30px;
+	text-align: center;
+	font-style: italic;
+	text-shadow: 1px 2px 3px white;
+}
+
+#choiceRound
+{
+	text-align: center;
+	margin: auto;
+	width: 500px;
+	margin-top: 15px;
+}
+
+#choiceRound form
+{
+	margin-left: 25px;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	border: 1px solid black;
+}
+
+#selectRound tr td
+{
+	padding: 8px;
+	width: 350px;
+}
+
+#selectRound tr.round
+{
+	border-bottom: 1px solid white;
+}
+
+#choiceRound select
+{
+	margin-left: 5px;
+	background: linear-gradient(#64819f, #94afcb);
+	border: 1px solid white;
+	box-shadow: 1px 1px 8px #64819f;
+}
+
+#choiceRound select:focus
+{
+	color: white;
+}
+
+#choiceRound option
+{
+	color: black;
+}
+
+#choiceRound input[type=submit]
+{
+	color: white;
+	background: linear-gradient(#64819f, #94afcb);
+	border: 1px solid white;
+	border-radius: 8px;
+	text-shadow: 1px 2px 3px black;
+	box-shadow: 1px 1px 8px #64819f;
+	margin-top: 20px;
+}
+
+.href-pseudo-fight, .no-lien
+{
+	text-decoration: none;
+	color: blue;
+}
+
+.href-pseudo-fight:hover
+{
+	text-decoration: underline;
+}
+
+
+fieldset.accepte-fight
+{
+	border: 1px solid #666ca4;
+}
+
+fieldset.accepte-fight legend
+{
+	font-size: 20px;
+	border: 1px solid #666ca4;
+	background: linear-gradient(#b7bdf2, #a3a9da);
+	width: auto;
+	height: 30px;
+	text-align: center;
+	position: relative;
+	left: -57px;
+	color: white;
+	text-shadow: 0 0 10px black;
+	padding: 5px;
+}
+
+.accepte-fight p
+{
+	text-align: center;
+	margin-bottom: 10px;
+}
+
+.personnage { color: red; }
+
+#accepteFight
+{
+	text-align: center;
+	margin: auto;
+	width: 500px;
+	margin-top: 15px;
+}
+
+#accepteFight form
+{
+	margin-left: 25px;
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+
+#selectRound tr td
+{
+	padding: 8px;
+	width: 350px;
+}
+
+#selectRound tr.round
+{
+	border-bottom: 1px solid white;
+}
+
+#accepteFight select
+{
+	margin-left: 5px;
+	background: linear-gradient(#64819f, #94afcb);
+	border: 1px solid white;
+	box-shadow: 1px 1px 8px #64819f;
+}
+
+#accepteFight select:focus
+{
+	color: white;
+}
+
+#accepteFight option
+{
+	color: black;
+}
+
+#accepteFight input[type=submit]
+{
+	color: white;
+	background: linear-gradient(#64819f, #94afcb);
+	border: 1px solid white;
+	border-radius: 8px;
+	text-shadow: 1px 2px 3px black;
+	box-shadow: 1px 1px 8px #64819f;
+	margin-top: 20px;
+}
+
+#recapAdversaire, #accepteFight
+{
+	vertical-align: top;
+	display: inline-block;
+}
+
+#recapAdversaire
+{
+	width: 200px;
+	text-align: center;
+	border: 1px solid #64819f;
+	border-radius: 8px;
+	background: linear-gradient(#b7bdf2, #a3a9da);
+}
+
+#recapAdversaire img
+{
+	border-top-left-radius: 8px;
+	border-top-right-radius: 8px;
+}
+
+/* -----------------------------------------------------------------------------
+    P R E V I S U A L I S A T I O N   C O M B A T 
+----------------------------------------------------------------------------- */
+
+#combat
+{
+	width: 700px;
+	margin: auto;
+}
+
+#block_adversaire, #block_defenseur, .combat-vs
+{
+	display: inline-block;
+}
+
+#block_defenseur
+{
+	float: right;
+	margin-right: 40px;
+}
+
+.combat-name-m_p
+{
+	display: block;
+	margin-left: 15px;
+	margin-bottom: 8px;
+}
+
+.combat-vs
+{
+	margin-left: 45px;
+	margin-bottom: 20px;
+	position: relative;
+	top: -50px;
+}
+
+.combat-go
+{
+	width: 300px;
+	height: 139px;
+	margin-left: 26%;
+	margin-top: -20px;
+}
+
+/* -----------------------------------------------------------------------------
+    F I G H T  L E C T U R E  D U  C O M B A T 
+----------------------------------------------------------------------------- */
+
+#read-fight
+{
+	width: 100%;
+	position: relative;
+	margin: auto;
+}
+
+.cadreFight
+{
+	position: absolute;
+	top: 0px;
+}
+
+.infos-perso-adv, .infos-perso-def
+{
+	display: inline-block;
+	vertical-align: top;
+}
+
+.round-letter
+{
+	display: inline-block;
+	position: relative;
+	top: 100px;
+}
+
+/* Infos du personnage attaquant lors de la lecture du combat */
+
+.false { color:red; }
+
+.infos-perso-adv-avatar
+{
+	float: left;
+	position: relative;
+	top: 10px;
+}
+
+.infos-perso-adv-mana .current-mana
+{
+	position: relative;
+	bottom: 6px;
+	left: 106px;
+}
+
+.infos-perso-adv-life .current-life
+{
+	position: relative;
+	top: 9px;
+	left: 2px;
+}
+
+.infos-perso-adv-pseudo
+{
+	display: block;
+	position: relative;
+	bottom: 5px;
+}
+/* Infos du personnage défendant lors de la lecture du combat */
+
+.infos-perso-def-avatar
+{
+	float: right;
+	position: relative;
+	top: 10px;
+}
+
+.infos-perso-def-mana .current-mana
+{
+	position: relative;
+	bottom: 13px;
+	left: 120px;
+}
+
+.infos-perso-def-life .current-life
+{
+	position: relative;
+	top: 9px;
+	left: 128px;
+}
+
+.infos-perso-def-pseudo
+{
+	display: block;
+	position: relative;
+	bottom: 5px;
+	text-align: right;
+}
+
+/* Barre de vie et de mana */
+
+/* Barre de vie joueur à gauche */
+
+.bar-life, .progression-life
+{
+	display: block;
+	height: 20px;
+	width: 300px;
+
+	border: 1px solid black;
+}
+
+.bar-life
+{
+	background-color: red;
+	margin: 0 0 5px;
+
+	-moz-box-shadow: 1px 1px 4px #999;
+	-webkit-box-shadow: 1px 1px 4px #999;
+	-o-box-shadow: 1px 1px 4px #999;
+	box-shadow: 1px 1px 4px #999;
+}
+
+.progression-life
+{
+	display: block;
+	background-color: #19E50B;
+	position: relative;
+	bottom: 1px;
+	right: 1px;
+
+	-moz-box-shadow: 1px 1px 4px #999;
+	-webkit-box-shadow: 1px 1px 4px #999;
+	-o-box-shadow: 1px 1px 4px #999;
+	box-shadow: 1px 1px 4px #999;
+}
+
+.percent-life
+{
+	color: white;
+	display: block;
+	text-align: center;
+	font-size: 18px;
+}
+
+.bar-mana, .progression-mana
+{
+	display: block;
+	height: 20px;
+	width: 300px;
+
+	border: 1px solid black;
+}
+
+.bar-mana
+{
+	background-color: blue;
+	margin: 0 0 5px;
+
+	-moz-box-shadow: 1px 1px 4px #999;
+	-webkit-box-shadow: 1px 1px 4px #999;
+	-o-box-shadow: 1px 1px 4px #999;
+	box-shadow: 1px 1px 4px #999;
+}
+
+.progression-mana
+{
+	display: block;
+	background-color: #01AAFF;
+	position: relative;
+	bottom: 1px;
+	right: 1px;
+
+	-moz-box-shadow: 1px 1px 4px #999;
+	-webkit-box-shadow: 1px 1px 4px #999;
+	-o-box-shadow: 1px 1px 4px #999;
+	box-shadow: 1px 1px 4px #999;
+}
+
+.percent-mana
+{
+	color: white;
+	display: block;
+	text-align: center;
+	font-size: 18px;
+}
+
+
+/* Barre de vie joueur à droite */
+
+.bar-life-right, .progression-life-right
+{
+	display: block;
+	height: 20px;
+	width: 300px;
+
+	border: 1px solid black;
+}
+
+.bar-life-right
+{
+	background-color: #19E50B;
+	margin: 0 0 5px;
+
+	-moz-box-shadow: 1px 1px 4px #999;
+	-webkit-box-shadow: 1px 1px 4px #999;
+	-o-box-shadow: 1px 1px 4px #999;
+	box-shadow: 1px 1px 4px #999;
+}
+
+.progression-life-right
+{
+	display: block;
+	background-color: red;
+	position: relative;
+	bottom: 1px;
+	right: 1px;
+
+	-moz-box-shadow: 1px 1px 4px #999;
+	-webkit-box-shadow: 1px 1px 4px #999;
+	-o-box-shadow: 1px 1px 4px #999;
+	box-shadow: 1px 1px 4px #999;
+}
+
+.percent-life-right
+{
+	color: white;
+	display: block;
+	text-align: center;
+	font-size: 18px;
+}
+
+.bar-mana-right, .progression-mana-right
+{
+	display: block;
+	height: 20px;
+	width: 300px;
+
+	border: 1px solid black;
+}
+
+.bar-mana-right
+{
+	background-color: blue;
+	margin: 0 0 5px;
+
+	-moz-box-shadow: 1px 1px 4px #999;
+	-webkit-box-shadow: 1px 1px 4px #999;
+	-o-box-shadow: 1px 1px 4px #999;
+	box-shadow: 1px 1px 4px #999;
+}
+
+.progression-mana-right
+{
+	display: block;
+	background-color: #01AAFF;
+	position: relative;
+	bottom: 1px;
+	right: 1px;
+
+	-moz-box-shadow: 1px 1px 4px #999;
+	-webkit-box-shadow: 1px 1px 4px #999;
+	-o-box-shadow: 1px 1px 4px #999;
+	box-shadow: 1px 1px 4px #999;
+}
+
+.percent-mana-right
+{
+	color: white;
+	display: block;
+	text-align: center;
+	font-size: 18px;
+}
+
+/* Affichage des informations sur les dégâts et défense du joueur du round en cours */
+
+.infos-damage-defense
+{
+	width: 50%;
+	margin: auto;
+	padding-top: 40px;
+}
+
+.infos-damage-perso-adv, .infos-damage-perso-def
+{
+	display: inline-block;
+	vertical-align: bottom;
+}
+
+.infos-damage-perso-adv
+{
+	position: relative;
+	left: -150px;
+	top: -30px;
+}
+
+.infos-damage-perso-adv .current-damage
+{
+	position: relative;
+	bottom: 5px;
+}
+
+.infos-damage-perso-adv .current-defense
+{
+	position: relative;
+	top: 8px;
+}
+
+.infos-damage-perso-def
+{
+	position: relative;
+	top: -86px;
+	right: -250px;
+}
+
+.infos-damage-perso-def .current-damage
+{
+	display: block;
+	position: relative;
+	bottom: 5px;
+	text-align: right;
+}
+
+.infos-damage-perso-def .current-defense
+{
+	display: block;
+	position: relative;
+	top: 8px;
+	text-align: right;
+}
+
+/* Barre de Dommage et Défense perso à gauche */
+
+.bar-damage, .progression-damage
+{
+	display: block;
+	height: 10px;
+	width: 231px;
+
+	border: 1px solid black;
+}
+
+.bar-damage
+{
+	background-color: grey;
+
+	-moz-box-shadow: 1px 1px 4px #999;
+	-webkit-box-shadow: 1px 1px 4px #999;
+	-o-box-shadow: 1px 1px 4px #999;
+	box-shadow: 1px 1px 4px #999;
+}
+
+.progression-damage
+{
+	display: block;
+	background-color: blue;
+	position: relative;
+	bottom: 1px;
+	right: 1px;
+
+	-moz-box-shadow: 1px 1px 4px #999;
+	-webkit-box-shadow: 1px 1px 4px #999;
+	-o-box-shadow: 1px 1px 4px #999;
+	box-shadow: 1px 1px 4px #999;	
+}
+
+
+.bar-defense, .progression-defense
+{
+	display: block;
+	height: 10px;
+	width: 231px;
+
+	border: 1px solid black;
+}
+
+.bar-defense
+{
+	position: relative;
+	top: 13px;
+	background-color: grey;
+
+	-moz-box-shadow: 1px 1px 4px #999;
+	-webkit-box-shadow: 1px 1px 4px #999;
+	-o-box-shadow: 1px 1px 4px #999;
+	box-shadow: 1px 1px 4px #999;
+}
+
+.progression-defense
+{
+	display: block;
+	background-color: yellow;
+	position: relative;
+	bottom: 1px;
+	right: 1px;
+
+	-moz-box-shadow: 1px 1px 4px #999;
+	-webkit-box-shadow: 1px 1px 4px #999;
+	-o-box-shadow: 1px 1px 4px #999;
+	box-shadow: 1px 1px 4px #999;	
+}
+
+/* Barre de Dommage et Défense perso à droite */
+
+.bar-damage-right, .progression-damage-right
+{
+	display: block;
+	height: 10px;
+	width: 231px;
+
+	border: 1px solid black;
+}
+
+.bar-damage-right
+{
+	background-color: blue;
+
+	-moz-box-shadow: 1px 1px 4px #999;
+	-webkit-box-shadow: 1px 1px 4px #999;
+	-o-box-shadow: 1px 1px 4px #999;
+	box-shadow: 1px 1px 4px #999;
+}
+
+.progression-damage-right
+{
+	display: block;
+	background-color: grey;
+	position: relative;
+	bottom: 1px;
+	right: 1px;
+
+	-moz-box-shadow: 1px 1px 4px #999;
+	-webkit-box-shadow: 1px 1px 4px #999;
+	-o-box-shadow: 1px 1px 4px #999;
+	box-shadow: 1px 1px 4px #999;	
+}
+
+
+.bar-defense-right, .progression-defense-right
+{
+	display: block;
+	height: 10px;
+	width: 231px;
+
+	border: 1px solid black;
+}
+
+.bar-defense-right
+{
+	position: relative;
+	top: 13px;
+	background-color: yellow;
+
+	-moz-box-shadow: 1px 1px 4px #999;
+	-webkit-box-shadow: 1px 1px 4px #999;
+	-o-box-shadow: 1px 1px 4px #999;
+	box-shadow: 1px 1px 4px #999;
+}
+
+.progression-defense-right
+{
+	display: block;
+	background-color: grey;
+	position: relative;
+	bottom: 1px;
+	right: 1px;
+
+	-moz-box-shadow: 1px 1px 4px #999;
+	-webkit-box-shadow: 1px 1px 4px #999;
+	-o-box-shadow: 1px 1px 4px #999;
+	box-shadow: 1px 1px 4px #999;	
+}
+
+/* Terrain du combat */
+
+.match
+{
+	width: 83%;
+	margin: auto;
+}
+
+.terrain-left-perso, .terrain-right-perso
+{
+	display: inline-block;
+}
+
+.terrain-left-perso
+{
+	position:relative; 
+	top:85px;
+}
+
+.terrain-left-perso .degat
+{
+	color: red;
+	position: relative;
+	bottom: 150px;
+	left: 50px;
+}
+
+.terrain-right-perso
+{
+	display: block;
+	position:relative;
+	bottom:35px;
+	text-align: right;
+}
+
+.terrain-right-perso .degat
+{
+	color: red;
+	position: relative;
+	bottom: 150px;
+	left: 250px;
+}
+
+.button-nextRound
+{
+	display: block;
+	margin: auto;
+}
+
+.recap
+{
+	width: auto;
+	height: auto;
+	display: block;
+	position: relative;
+	top: 200px;
+	left: 180px;
+}
+
+
+/* Récapitulatif combat - Fin du combat */
+
+#tableau {
+    font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif;
+    font-size: 12px;
+    margin: 10px 0;
+    width: 100%;
+    text-align: left;
+    border-collapse: collapse;
+	margin-bottom: 50px;
+}
+#tableau th {
+    font-size: 13px;
+    font-weight: normal;
+    padding: 8px;
+    background: #b9c9fe url('http://4.bp.blogspot.com/_xDpoN6UfFFY/S-J2gjh1nPI/AAAAAAAACbg/7lNsVpks2oY/s1600/gradhead.png') repeat-x;
+    border-top: 2px solid #d3ddff;
+    border-bottom: 1px solid #fff;
+    color: #039;
+}
+#tableau tr.liste_perso td {
+    padding: 8px;
+    border-bottom: 1px solid #fff;
+    color: #669;
+    border-top: 1px solid #fff;
+    background: #e8edff url('http://1.bp.blogspot.com/_xDpoN6UfFFY/S-J2f5yBC3I/AAAAAAAACbY/zWXYXsR-w5E/s1600/gradback.png') repeat-x;
+}
+#tableau tfoot tr td{
+    background: #e8edff;
+    font-size: 16px;
+    color: #99c;
+    text-align:center;
+}
+
+#tableau tr.notable
+{
+	text-align: center;
+}
+#tableau tbody tr.liste_perso:hover td {
+    background: #d0dafd url('http://4.bp.blogspot.com/_xDpoN6UfFFY/S-J2hsztUzI/AAAAAAAACbo/ztV1CK0RUrE/s1600/gradhover.png') repeat-x;
+    color: #339;
+}
+#tableau a:hover {
+    text-decoration:underline;
+}
+
+/* -----------------------------------------------------------------------------
+    M E S S A G E R I E  P R I V E E 
+----------------------------------------------------------------------------- */
+
+ul.center
+{
+	text-align: center;
+	margin-bottom: 20px;
+}
+
+ul.center li, ul.center li a
+{
+	display: inline-block;
+	text-decoration: none;
+	color: grey;
+}
+
+ul.center li a.hover, .hover
+{
+	color: white;
+}
+
+.mp-info
+{
+	display: block;
+	text-align: right;
+}
+
+.content-bloqued
+{
+	width: 50%;
+	margin: auto;
+}
+
+#liste_bloqued
+{
+	width: 250px;
+	border: 1px solid black;
+	background-color: #D1d1d1;
+	float: left;
+	margin-right: calc(20% - 10%);
+	margin-bottom: 20px;
+}
+
+#liste_bloqued .titre
+{
+	display: block;
+	text-align: center;
+	text-decoration: underline;
+	color: white;
+}
+
+#liste_bloqued .membre
+{
+	display: block;
+	margin-left: 10px;
+}
+
+#liste_bloqued .membre
+{
+	display: block;
+	margin-bottom: 5px;
+}
+
+#liste_bloqued .close
+{
+	float: right;
+	font-size: 20px;
+	font-weight: bold;
+	line-height: 18px;
+	color: #000000;
+	text-shadow: 0 1px 0 #ffffff;
+	opacity: 0.2;
+	filter: alpha(opacity=20);
+}
+
+#liste_bloqued .close:hover
+{
+	color: #000000;
+	text-decoration: none;
+	opacity: 0.4;
+	filter: alpha(opacity=40);
+	cursor: pointer;
+}
+
+.no_table, .no_table:hover
+{
+	background: none;
+}
+
+/* -----------------------------------------------------------------------------
+    P R O F I L 
+----------------------------------------------------------------------------- */
+
+#profil
+{
+	background: url("../images/profil/background.png");
+	width: 539px;
+	height: 463px;
+}
+
+#profil .left
+{
+	position: relative;
+	top: 107px;
+	left: 20px;
+	width: 181px;
+	height: 270px;
+	float: left;
+}
+
+#profil .right .info
+{
+	float: right;
+	width: 312px;
+	height: 382px;
+	text-align: center;
+	padding-left: 5px;
+	text-shadow: 1px 1px 5px white;
+}
+
+.info h1 { font-size: 26px; }
+.info .pseudo { color: grey; font-weight: bold; }
+.info h2 { margin-top: 15px; margin-bottom: 5px;}
+
+.info li
+{
+	text-align: justify;
+	margin: auto;
+	margin-bottom: 4px;
+}
+
+.info-chiffre
+{
+	font-weight: bold; color: #64819f;
+}
+
+.actif
+{
+	color: green;
+}
+
+.inactif
+{
+	color: red;
+}
+
+#membre_profil input[type=submit], input[type=file]
+{
+	color: white;
+	background: linear-gradient(#64819f, #94afcb);
+	border: 1px solid white;
+	border-radius: 8px;
+	text-shadow: 1px 2px 3px black;
+	box-shadow: 1px 1px 8px #64819f;
+	margin-top: 20px;
+}
+
+.tooltip
+{
+	position: relative;
+	cursor: help;
+	display: inline-block;
+	text-decoration: none;
+	color: #222;
+	outline: none;
+}
+
+.tooltip span.t
+{
+	visibility: hidden;
+	position: absolute;
+	bottom: 30px;
+	left: 50%;
+	z-index: 999;
+	width: 250px;
+	margin-left: -127px;
+	padding: 10px;
+	border: 2px solid #ccc;
+	opacity: .9;
+    background: #e8edff url('http://1.bp.blogspot.com/_xDpoN6UfFFY/S-J2f5yBC3I/AAAAAAAACbY/zWXYXsR-w5E/s1600/gradback.png') repeat-x;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+	-moz-box-shadow: 0 1px 2px rgba(0,0,0,.4), 0 1px 0 rgba(255,255,255,.5) inset;
+	-webkit-box-shadow: 0 1px 2px rgba(0,0,0,.4), 0 1px 0 rgba(255,255,255,.5) inset;
+	box-shadow: 0 1px 2px rgba(0,0,0,.4), 0 1px 0 rgba(255,255,255,.5) inset;
+	text-shadow: 0 1px 0 rgba(255,255,255,.4);
+}
+
+.tooltip:hover span.t
+{
+	visibility: visible;
+}
+
+.tooltip span.t:before,
+.tooltip span.t:after
+{
+	content: "";
+	position: absolute;
+	z-index: 1000;
+	bottom: -7px;
+	left: 50%;
+	margin-left: -8px;
+	border-top: 8px solid #ddd;
+	border-left: 8px solid transparent;
+	border-right: 8px solid transparent;
+	border-bottom: 0;
+}
+
+.tooltip span.t:before
+{
+	border-top-color: #ccc;
+	bottom: -8px;
+}
+
+/* -----------------------------------------------------------------------------
+    B B C O D E 
+----------------------------------------------------------------------------- */
+
+.form form
+{
+	text-align: center;
+	margin-top: 10px;
+}
+
+input[type=button], .input-submit
+{
+	color: white;
+	background: linear-gradient(#64819f, #94afcb);
+	border: 1px solid white;
+	border-radius: 8px;
+	text-shadow: 1px 2px 3px black;
+	box-shadow: 1px 1px 8px #64819f;
+}
+
+input[type=button]:hover, .input-submit:hover
+{
+	color: black;
+}
+
+.input-submit { margin-top: 10px; }
+
+.form input
+{
+	margin-bottom: 5px;
+	margin-top: 5px;
+}
+
+
+.autocomplete-suggestions { border: 1px solid #999; background: #FFF; overflow: auto; }
+.autocomplete-suggestion { padding: 2px 5px; white-space: nowrap; overflow: hidden; }
+.autocomplete-selected { background: #F0F0F0; }
+.autocomplete-suggestions strong { font-weight: normal; color: #3399FF; }
+
+/* -----------------------------------------------------------------------------
+    R E S P O N S I V E - 
+----------------------------------------------------------------------------- */
+
+@media screen and (max-height: 720px)
+{
+
+	header
+	{
+		position: relative;
+	}
+
+	nav
+	{
+		position: relative;
+		top: -6px;
+	}
+
+	#perso_en_cours
+	{
+		position: fixed;
+	}
+	
+	#content
+	{
+		position: absolute;
+		left: 16%;
+	}
+
+	#inscription
+	{
+		background: url("../images/register/background_1280x720.png");
+		width: 800px;
+		height: 355px;
+		position: relative;
+	}
+
+	.text-inscription
+	{
+		width: 340px;
+		position: relative;
+		top: 70px;
+		left: 400px;
+	}
+
+	/* Affichage des informations sur les dégâts et défense du joueur du round en cours */
+
+	.infos-damage-defense
+	{
+		width: 50%;
+		margin: auto;
+		padding-top: 40px;
+	}
+
+	.infos-damage-perso-adv, .infos-damage-perso-def
+	{
+		display: inline-block;
+		vertical-align: bottom;
+	}
+
+	.infos-damage-perso-adv
+	{
+		position: relative;
+		right: 120px;
+	}
+
+	.infos-damage-perso-adv .current-damage
+	{
+		position: relative;
+		bottom: 5px;
+	}
+
+	.infos-damage-perso-adv .current-defense
+	{
+		position: relative;
+		top: 8px;
+	}
+
+	.infos-damage-perso-def
+	{
+		position: relative;
+		left: 160px;
+		bottom: 56px;
+	}
+
+	.infos-damage-perso-def .current-damage
+	{
+		display: block;
+		position: relative;
+		bottom: 5px;
+		text-align: right;
+	}
+
+	.infos-damage-perso-def .current-defense
+	{
+		display: block;
+		position: relative;
+		top: 8px;
+		text-align: right;
+	}
+
+	/* Barre de Dommage et Défense perso à gauche */
+
+	.bar-damage, .progression-damage
+	{
+		display: block;
+		height: 10px;
+		width: 231px;
+
+		border: 1px solid black;
+	}
+
+	.bar-damage
+	{
+		background-color: grey;
+
+		-moz-box-shadow: 1px 1px 4px #999;
+		-webkit-box-shadow: 1px 1px 4px #999;
+		-o-box-shadow: 1px 1px 4px #999;
+		box-shadow: 1px 1px 4px #999;
+	}
+
+	.progression-damage
+	{
+		display: block;
+		background-color: blue;
+		position: relative;
+		bottom: 1px;
+		right: 1px;
+
+		-moz-box-shadow: 1px 1px 4px #999;
+		-webkit-box-shadow: 1px 1px 4px #999;
+		-o-box-shadow: 1px 1px 4px #999;
+		box-shadow: 1px 1px 4px #999;	
+	}
+
+
+	.bar-defense, .progression-defense
+	{
+		display: block;
+		height: 10px;
+		width: 231px;
+
+		border: 1px solid black;
+	}
+
+	.bar-defense
+	{
+		position: relative;
+		top: 13px;
+		background-color: grey;
+
+		-moz-box-shadow: 1px 1px 4px #999;
+		-webkit-box-shadow: 1px 1px 4px #999;
+		-o-box-shadow: 1px 1px 4px #999;
+		box-shadow: 1px 1px 4px #999;
+	}
+
+	.progression-defense
+	{
+		display: block;
+		background-color: yellow;
+		position: relative;
+		bottom: 1px;
+		right: 1px;
+
+		-moz-box-shadow: 1px 1px 4px #999;
+		-webkit-box-shadow: 1px 1px 4px #999;
+		-o-box-shadow: 1px 1px 4px #999;
+		box-shadow: 1px 1px 4px #999;	
+	}
+
+	/* Barre de Dommage et Défense perso à droite */
+
+	.bar-damage-right, .progression-damage-right
+	{
+		display: block;
+		height: 10px;
+		width: 231px;
+
+		border: 1px solid black;
+	}
+
+	.bar-damage-right
+	{
+		background-color: blue;
+
+		-moz-box-shadow: 1px 1px 4px #999;
+		-webkit-box-shadow: 1px 1px 4px #999;
+		-o-box-shadow: 1px 1px 4px #999;
+		box-shadow: 1px 1px 4px #999;
+	}
+
+	.progression-damage-right
+	{
+		display: block;
+		background-color: grey;
+		position: relative;
+		bottom: 1px;
+		right: 1px;
+
+		-moz-box-shadow: 1px 1px 4px #999;
+		-webkit-box-shadow: 1px 1px 4px #999;
+		-o-box-shadow: 1px 1px 4px #999;
+		box-shadow: 1px 1px 4px #999;	
+	}
+
+
+	.bar-defense-right, .progression-defense-right
+	{
+		display: block;
+		height: 10px;
+		width: 231px;
+
+		border: 1px solid black;
+	}
+
+	.bar-defense-right
+	{
+		position: relative;
+		top: 13px;
+		background-color: yellow;
+
+		-moz-box-shadow: 1px 1px 4px #999;
+		-webkit-box-shadow: 1px 1px 4px #999;
+		-o-box-shadow: 1px 1px 4px #999;
+		box-shadow: 1px 1px 4px #999;
+	}
+
+	.progression-defense-right
+	{
+		display: block;
+		background-color: grey;
+		position: relative;
+		bottom: 1px;
+		right: 1px;
+
+		-moz-box-shadow: 1px 1px 4px #999;
+		-webkit-box-shadow: 1px 1px 4px #999;
+		-o-box-shadow: 1px 1px 4px #999;
+		box-shadow: 1px 1px 4px #999;	
+	}
+}

@@ -1,0 +1,162 @@
+/*
+ *
+ *	CSS du forum
+ *
+ */
+
+.forum-lien
+{
+	color: blue;
+	font-size: 17px;
+	text-decoration: none;
+}
+
+.forum-lien:hover
+{
+	text-decoration: underline;
+}
+
+.forum-desc
+{
+	display: block;
+	font-style: italic;
+	margin-top: 2px;
+}
+
+.image-info
+{
+	vertical-align: top;
+}
+
+ul.center
+{
+	text-align: center;
+	margin-bottom: 20px;
+}
+
+ul.center li, ul.center li a
+{
+	display: inline-block;
+	text-decoration: none;
+	color: grey;
+	font-size: 26px;
+}
+
+ul.center li a.hover, .hover
+{
+	color: white;
+}
+
+a.submit
+{
+	color: white;
+	background: linear-gradient(#64819f, #94afcb);
+	border: 1px solid white;
+	border-radius: 8px;
+	text-shadow: 1px 2px 3px black;
+	box-shadow: 1px 1px 8px #64819f;
+	text-decoration: none;
+	padding: 10px;
+}
+
+a.submit:hover
+{
+	color: black;
+}
+
+.href-sujet
+{
+	text-decoration: none;
+}
+
+.titre-sujet
+{
+	font-size: 17px;
+	color: blue;
+	text-decoration: none;
+}
+
+.info-sujet
+{
+	font-style: italic;
+	color: grey;
+}
+
+.last-post
+{
+	text-decoration: none;
+	color: grey;
+}
+
+.topic-info-membre, .topic-message
+{
+	vertical-align: top;
+}
+
+.topic-info-membre { border-right: 1px solid black;}
+
+.id_post a
+{
+	text-decoration: none;
+	color: grey;
+	position: absolute;
+	right: 10px;
+}
+
+.signature { display: block; margin-top: 100px; }
+a.a { text-decoration: none; color: grey; }
+a.a:hover { text-decoration: underline; }
+
+.a-profil { color: #039; }
+
+
+/* -----------------------------------------------------------------------------
+    T O P I C - A C T I O N S - > M O D É R A T I O N
+----------------------------------------------------------------------------- */
+
+#actions
+{
+	text-align: right;
+}
+
+/* -----------------------------------------------------------------------------
+    T O P I C - R E S O L U
+----------------------------------------------------------------------------- */
+
+#resolve-topic
+{
+	color: #d75c01;
+}
+
+#resolve-topic img, #resolve-topic p
+{
+	vertical-align: top;
+}
+
+span.txt { display: inline-block; margin-top: 7px; margin-left: 5px; }
+
+p.text-resolve, span.txt { vertical-align: top; }
+
+.form-resolve, .form-actions { display: inline-block; vertical-align: top;}
+
+#locked-topic
+{
+	color: #6275b0;
+}
+
+/* -----------------------------------------------------------------------------
+    M E S S A G E
+----------------------------------------------------------------------------- */
+
+.mess-edit
+{
+	margin-top: 20px;
+	margin-left: 50px;
+	font-style: italic;
+}
+
+#repondre
+{
+	margin: auto;
+	text-align: center;
+}
