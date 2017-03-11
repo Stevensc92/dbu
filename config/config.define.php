@@ -2,9 +2,9 @@
 if($_SERVER['HTTP_HOST'] == 'localhost')
 {
     define('DB_HOST', 'localhost');
-    define('DB_NAME', 'dbu');
-    define('DB_USER', 'root');
-    define('DB_PASS', '');
+    define('DB_NAME', 'dbu'); // Update this if necessary
+    define('DB_USER', 'root'); // Update this if necessary
+    define('DB_PASS', ''); // Update this if necessary
 }
 else
 {
@@ -17,7 +17,7 @@ else
 date_default_timezone_set('Europe/Paris');
 
 // Define globale du site
-define('ROOTPATH', "http://".$_SERVER['SERVER_NAME']."/dbu_test/");
+define('ROOTPATH', "http://".$_SERVER['SERVER_NAME']."/dbu_test/"); // Update folder name if necessary
 define('FORUM', ROOTPATH.'forum/');
 define('TITRESITE', "Dragon Ball Universe");
 define('LAST_URL', "http://".$_SERVER['SERVER_NAME'].$_SERVER['REQUEST_URI']);
