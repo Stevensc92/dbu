@@ -1,6 +1,10 @@
 # DBU
 Dragon Ball Universe / Project Personal
 
+# Configuration
+
+To configure this project, update this file `config/config.define.php` check line *5*, *6*, *7* and *20*
+For line *20* update the folder name by your folder name when you've cloned this repo
 
 # Aperçu de certaines pages
 
