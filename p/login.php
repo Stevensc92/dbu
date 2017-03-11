@@ -37,7 +37,7 @@ if (!is_co())
 				$email = $_POST['email'];
 				$password = HashPassword($_POST['password']);
 				// On commence à vérifier si les deux champs donne un retour à la BDD
-				$sqlVerifInfoMember = $bdd->prepare("SELECT 
+				$sqlVerifInfoMember = $bdd->prepare("SELECT
 														COUNT(id) as NbMembre, id, pseudo, mdp, rang,
 														 groupe, bannis_raison, valider, ip
 													 FROM

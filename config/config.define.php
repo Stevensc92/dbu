@@ -17,7 +17,7 @@ else
 date_default_timezone_set('Europe/Paris');
 
 // Define globale du site
-define('ROOTPATH', "http://".$_SERVER['SERVER_NAME']."/dbu_v2/");
+define('ROOTPATH', "http://".$_SERVER['SERVER_NAME']."/dbu_test/");
 define('FORUM', ROOTPATH.'forum/');
 define('TITRESITE', "Dragon Ball Universe");
 define('LAST_URL', "http://".$_SERVER['SERVER_NAME'].$_SERVER['REQUEST_URI']);
