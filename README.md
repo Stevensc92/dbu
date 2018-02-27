@@ -1,5 +1,5 @@
 # DBU
-Dragon Ball Universe / Project Personal created on 2015
+Dragon Ball Universe / Project Personal was started on 2013 and took a break 3 years ago
 
 # Configuration
 
